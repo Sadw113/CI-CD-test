@@ -10,4 +10,4 @@ RUN go get "github.com/stretchr/testify/require"
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o exec.exe
 
-CMD ["/main"] 
+CMD ["./exec.exe"] 
